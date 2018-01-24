@@ -15,13 +15,6 @@ public class Pupil {
     private DateFormat format;
     private int read;
 
-    public Pupil(String ID, String name, Date birthDate, int read) {
-        this.ID = ID;
-        this.name = name;
-        this.birthDate = birthDate;
-        this.read = read;
-    }
-
     public Pupil() {}
 
     public String getID() { return ID; }
@@ -50,7 +43,6 @@ public class Pupil {
     int getRead() { return read; }
 
     public void setRead(String read) { this.read = Integer.parseInt(read); }
-    void setRead(int previous) { this.read = previous + 1; }
 
     public static class PupilComparator1 implements Comparator<Pupil> {
         @Override
@@ -70,15 +62,5 @@ public class Pupil {
                 return 1;
             }
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Pupil{" +
-                "ID=" + ID +
-                ", name='" + name + '\'' +
-                ", birthDate=" + getBirthDate() +
-                ", read=" + read +
-                '}';
     }
 }

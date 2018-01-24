@@ -11,18 +11,6 @@ public class Journal extends Item {
 
     public String getType() { return super.getType() + type; }
 
-    public static void setType(String type) {
-        Journal.type = type;
-    }
-
-    public String getPublishingHouse() {
-        return publishingHouse;
-    }
-
-    public void setPublishingHouse(String publishingHouse) {
-        this.publishingHouse = publishingHouse;
-    }
-
     @Override
     public String toString() {
         return "#" +super.getID()+ " " +type+ ": " +super.toString()+ ", publishing house: " +publishingHouse+ ";";

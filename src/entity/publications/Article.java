@@ -11,18 +11,6 @@ public class Article extends Item {
 
     public String getType() { return super.getType() + type; }
 
-    public static void setType(String type) {
-        Article.type = type;
-    }
-
-    public String getJournalist() {
-        return journalist;
-    }
-
-    public void setJournalist(String journalist) {
-        this.journalist = journalist;
-    }
-
     @Override
     public String toString() {
         return "#" +super.getID()+ " " +type+ ": " +super.toString()+ ", journalist: " +journalist+ ";";

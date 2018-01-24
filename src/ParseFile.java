@@ -23,7 +23,6 @@ class ParseFile {
 
             pupilArrayList.add(pupil);
         }
-
         return pupilArrayList;
     }
 
@@ -37,18 +36,22 @@ class ParseFile {
 
     static void increaseRead(Element root, String ID){
         ID = "id" + ID;
-        System.out.println(ID);
         NodeList pupilNodes = root.getElementsByTagName("pupil");
-
+        Element pupilElement;
         for (int i = 0; i < pupilNodes.getLength(); i++){
-            Element pupilElement = (Element) pupilNodes.item(i);
+            pupilElement = (Element) pupilNodes.item(i);
             if (pupilElement.getAttribute("ID").equals(ID)){
-//                int read = Integer.parseInt(getBabyValue(pupilElement, "read"))
+                int read = Integer.parseInt(getBabyValue(pupilElement, "read"));
+                read += 1;
+                setBabyValue(pupilElement, Integer.toString(read));
             }
         }
     }
 
-    private static void setBabyValue(Element parent, String childName, String newChildName){
-
+    private static void setBabyValue(Element parent, String newChildName){
+        NodeList childList = parent.getElementsByTagName("read");
+        Element child = (Element) childList.item(0);
+        Node node = child.getFirstChild();
+        node.setNodeValue(newChildName);
     }
 }

@@ -59,7 +59,7 @@ abstract class Menu {
                 case "back":
                     return;
                 default:
-                    System.out.println("OK");
+                    instance.readSmth(ID, choice, root);
                     break;
             }
         }

@@ -11,18 +11,6 @@ public class Book extends Item {
 
     public String getType() { return super.getType() + type; }
 
-    public static void setType(String type) {
-        Book.type = type;
-    }
-
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
     @Override
     public String toString() {
         return "#" +super.getID()+ " " +type+ ": " +super.toString()+ ", author: " +author+ ";";

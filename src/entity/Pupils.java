@@ -8,19 +8,7 @@ import java.util.ArrayList;
 public class Pupils {
     private ArrayList<Pupil> pupils;
 
-    public Pupils(ArrayList<Pupil> pupils) {
-        this.pupils = pupils;
-    }
-
-    public Pupils(){}
-
-    public ArrayList<Pupil> getPupils() {
-        return pupils;
-    }
-
-    public void setPupils(ArrayList<Pupil> pupils) {
-        this.pupils = pupils;
-    }
+    public Pupils(ArrayList<Pupil> pupils) { this.pupils = pupils; }
 
     public boolean acceptID(String ID){
         for (Pupil pupil : pupils){
@@ -39,14 +27,6 @@ public class Pupils {
             }
         }
         return "";
-    }
-
-    public void increaseRead(String ID){
-        for (Pupil pupil : pupils){
-            if (pupil.getID().equals(ID)){
-                pupil.setRead(pupil.getRead());
-            }
-        }
     }
 
     public void getReadingPupils(){
@@ -95,12 +75,5 @@ public class Pupils {
             default:
                 break;
         }
-    }
-
-    @Override
-    public String toString() {
-        return "Pupils{" +
-                "pupils=" + pupils +
-                '}';
     }
 }

@@ -1,24 +1,13 @@
-<?xml version="1.0" encoding="utf-8" ?>
-
-<!DOCTYPE pupilsBase [
-        <!ELEMENT pupilsBase (pupil+)>
-        <!ELEMENT pupil (name, birthDate, read)>
-        <!ATTLIST pupil ID ID #REQUIRED>
-        <!ELEMENT name (#PCDATA)>
-        <!ELEMENT birthDate (#PCDATA)>
-        <!ELEMENT read (#PCDATA)>
-        ]>
-
-<pupilsBase>
+<?xml version="1.0" encoding="UTF-8"?><pupilsBase>
     <pupil ID="id1">
         <name>Andrey Markovski</name>
         <birthDate>09-January-1998</birthDate>
-        <read>1</read>
+        <read>4</read>
     </pupil>
     <pupil ID="id2">
         <name>Ivan Podgaiski</name>
         <birthDate>28-January-1998</birthDate>
-        <read>2</read>
+        <read>5</read>
     </pupil>
     <pupil ID="id3">
         <name>Nikita Arobey</name>
