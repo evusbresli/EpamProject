@@ -4,5 +4,61 @@ Bad habitats
 Sam Paul
 Book
 2
-Lord of the rings
+Lord of the rings: The Brotherhood of the ring
 John Ronald Reuel Tolkien
+Journal
+3
+PlayBoy#135
+PlayBoy
+Book
+4
+Lord of the rings: Two towers
+John Ronald Reuel Tolkien
+Article
+5
+Do not see the sun for months
+Ivan Durak
+Newspaper
+16
+Comsomolian Truth
+OOO Red dawn
+Book
+6
+Lord of the rings: Returning of the king
+John Ronald Reuel Tolkien
+Book
+7
+Alice in Wonderland
+Luise Carol
+Article
+8
+Exploder activated
+Kirill Shishov
+Journal
+9
+Igromania#321
+Igromania & Co
+Book
+10
+Watchmen
+Alan Moore
+Book
+11
+Ready player one
+Ernest Cline
+Book
+12
+Ryan's Bad
+Tijan
+Book
+13
+Beware The Past
+Joy Ellis
+Book
+14
+Sex Not Love
+Vi Keeland
+Book
+15
+Artemis
+Andy Weir

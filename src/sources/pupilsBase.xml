@@ -2,7 +2,7 @@
     <pupil ID="id1">
         <name>Andrey Markovski</name>
         <birthDate>09-January-1998</birthDate>
-        <read>4</read>
+        <read>2</read>
     </pupil>
     <pupil ID="id2">
         <name>Ivan Podgaiski</name>
@@ -13,5 +13,95 @@
         <name>Nikita Arobey</name>
         <birthDate>16-May-1998</birthDate>
         <read>2</read>
+    </pupil>
+    <pupil ID="id4">
+        <name>Opal Rios</name>
+        <birthDate>16-April-2000</birthDate>
+        <read>10</read>
+    </pupil>
+    <pupil ID="id5">
+        <name>Molly	Mcdonald</name>
+        <birthDate>11-February-1999</birthDate>
+        <read>0</read>
+    </pupil>
+    <pupil ID="id6">
+        <name>Archie Maxwell</name>
+        <birthDate>05-December-1997</birthDate>
+        <read>25</read>
+    </pupil>
+    <pupil ID="id7">
+        <name>Benny	Owens</name>
+        <birthDate>01-June-2001</birthDate>
+        <read>1</read>
+    </pupil>
+    <pupil ID="id8">
+        <name>Horace Woods</name>
+        <birthDate>24-August-2001</birthDate>
+        <read>1</read>
+    </pupil>
+    <pupil ID="id9">
+        <name>Amy Herrera</name>
+        <birthDate>21-October-2000</birthDate>
+        <read>0</read>
+    </pupil>
+    <pupil ID="id10">
+        <name>Bethany Mason</name>
+        <birthDate>28-September-2003</birthDate>
+        <read>1</read>
+    </pupil>
+    <pupil ID="id11">
+        <name>Delores Pope</name>
+        <birthDate>11-November-2000</birthDate>
+        <read>11</read>
+    </pupil>
+    <pupil ID="id12">
+        <name>Trevor Graham</name>
+        <birthDate>09-July-2000</birthDate>
+        <read>13</read>
+    </pupil>
+    <pupil ID="id13">
+        <name>Claude Gonzalez</name>
+        <birthDate>03-May-2001</birthDate>
+        <read>14</read>
+    </pupil>
+    <pupil ID="id14">
+        <name>Ginger Logan</name>
+        <birthDate>21-January-1998</birthDate>
+        <read>9</read>
+    </pupil>
+    <pupil ID="id15">
+        <name>Anne Black</name>
+        <birthDate>11-January-1999</birthDate>
+        <read>43</read>
+    </pupil>
+    <pupil ID="id16">
+        <name>Carole Marsh</name>
+        <birthDate>08-October-2000</birthDate>
+        <read>1</read>
+    </pupil>
+    <pupil ID="id17">
+        <name>Gladys Singleton</name>
+        <birthDate>01-April-1999</birthDate>
+        <read>0</read>
+    </pupil>
+    <pupil ID="id18">
+        <name>Whitney Carson</name>
+        <birthDate>17-August-2002</birthDate>
+        <read>1</read>
+    </pupil>
+    <pupil ID="id19">
+        <name>Cornelius	Anderson</name>
+        <birthDate>18-March-2001</birthDate>
+        <read>2</read>
+    </pupil>
+    <pupil ID="id20">
+        <name>Carlton Floyd</name>
+        <birthDate>31-December-1999</birthDate>
+        <read>0</read>
+    </pupil>
+    <pupil ID="id21">
+        <name>Randy Orton</name>
+        <birthDate>09-January-1998</birthDate>
+        <read>0</read>
     </pupil>
 </pupilsBase>
