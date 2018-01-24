@@ -1,4 +1,4 @@
-package entity;
+package entity.publications;
 
 public class Item {
     private int ID;
@@ -6,12 +6,12 @@ public class Item {
 
     public Item() {}
 
-    public Item(int ID, String name){
+    Item(int ID, String name){
         this.ID = ID;
         this.name = name;
     }
 
-    public int getID() {
+    int getID() {
         return ID;
     }
 

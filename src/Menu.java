@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.util.Scanner;
 
 interface Menu {
+    String root = System.getProperty("user.dir") + "/src/";
+
     static void showMenuOne() throws IOException, ParserConfigurationException {
         String choice;
         Scanner read = new Scanner(System.in);
@@ -32,7 +34,7 @@ interface Menu {
     }
 
     static void showMenuPupil(Scanner read){
-        System.out.println("OK");
+
     }
 
     static void showPupilWork(Scanner read){
@@ -40,8 +42,7 @@ interface Menu {
     }
 
     static void showMenuLibrarian(Scanner read) throws IOException, ParserConfigurationException {
-        String root = System.getProperty("user.dir") + "/src/";
-        Scanner fileReader = new Scanner(new File(root + "superpass"));
+        Scanner fileReader = new Scanner(new File(root + "sources/superpass.txt"));
         String superPassword = fileReader.next();
 
         System.out.print("\nEnter administration password (back - return to main menu): ");

@@ -1,5 +1,5 @@
-import entity.Item;
 import entity.Pupils;
+import entity.publications.Item;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
@@ -16,7 +16,7 @@ class Library {
     private ArrayList<Item> items;
     private Pupils pupils;
 
-    Library(String root) { this.library = new File(root + "library"); }
+    Library(String root) { this.library = new File(root + "sources/library.txt"); }
 
     void showAvailable() throws IOException {
         items = FromToFile.readFromLibrary(library);
@@ -31,7 +31,7 @@ class Library {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         DocumentBuilder builder = factory.newDocumentBuilder();
         try {
-            Document document = builder.parse(rootSystem + "pupilsBase");
+            Document document = builder.parse(rootSystem + "sources/pupilsBase.xml");
             Element root = document.getDocumentElement();
             pupils = new Pupils(ParseFile.pupilListBuilder(root));
 

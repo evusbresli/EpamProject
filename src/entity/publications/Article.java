@@ -1,4 +1,4 @@
-package entity;
+package entity.publications;
 
 public class Article extends Item {
     private static String type = "Article";

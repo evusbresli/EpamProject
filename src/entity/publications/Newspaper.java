@@ -1,12 +1,12 @@
-package entity;
+package entity.publications;
 
-public class Journal extends Item{
-    private static String type = "Journal";
+public class Newspaper extends Item {
+    private static String type = "Newspaper";
     private String publishingHouse;
 
-    public Journal(int ID, String name, String publishingHouse) {
+    public Newspaper(int ID, String name, String publishingHouse) {
         super(ID, name);
-        publishingHouse = publishingHouse;
+        this.publishingHouse = publishingHouse;
     }
 
     public static String getType() {
@@ -14,7 +14,7 @@ public class Journal extends Item{
     }
 
     public static void setType(String type) {
-        Journal.type = type;
+        Newspaper.type = type;
     }
 
     public String getPublishingHouse() {
@@ -22,7 +22,7 @@ public class Journal extends Item{
     }
 
     public void setPublishingHouse(String publishingHouse) {
-        publishingHouse = publishingHouse;
+        this.publishingHouse = publishingHouse;
     }
 
     @Override
@@ -30,4 +30,3 @@ public class Journal extends Item{
         return "#" +super.getID()+ " " +type+ ": " +super.toString()+ ", publishing house: " +publishingHouse+ ";";
     }
 }
-

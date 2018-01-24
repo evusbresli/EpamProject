@@ -1,4 +1,4 @@
-import entity.*;
+import entity.publications.*;
 
 import java.io.*;
 import java.util.ArrayList;

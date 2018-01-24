@@ -1,10 +1,10 @@
-package entity;
+package entity.publications;
 
-public class Newspaper extends Item{
-    private static String type = "Newspaper";
+public class Journal extends Item {
+    private static String type = "Journal";
     private String publishingHouse;
 
-    public Newspaper(int ID, String name, String publishingHouse) {
+    public Journal(int ID, String name, String publishingHouse) {
         super(ID, name);
         this.publishingHouse = publishingHouse;
     }
@@ -14,7 +14,7 @@ public class Newspaper extends Item{
     }
 
     public static void setType(String type) {
-        Newspaper.type = type;
+        Journal.type = type;
     }
 
     public String getPublishingHouse() {
@@ -30,3 +30,4 @@ public class Newspaper extends Item{
         return "#" +super.getID()+ " " +type+ ": " +super.toString()+ ", publishing house: " +publishingHouse+ ";";
     }
 }
+
