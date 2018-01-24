@@ -9,9 +9,7 @@ public class Article extends Item {
         this.journalist = journalist;
     }
 
-    public static String getType() {
-        return type;
-    }
+    public String getType() { return super.getType() + type; }
 
     public static void setType(String type) {
         Article.type = type;

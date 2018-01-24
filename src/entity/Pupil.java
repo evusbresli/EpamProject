@@ -26,15 +26,15 @@ public class Pupil {
 
     public String getID() { return ID; }
 
-    public void setID(String ID) { this.ID = ID; }
+    public void setID(String ID) { this.ID = ID.substring(2); }
 
-    public String getName() { return name; }
+    String getName() { return name; }
 
     public void setName(String name) { this.name = name; }
 
-    public String getBirthDate() { return format.format(birthDate); }
+    String getBirthDate() { return format.format(birthDate); }
 
-    public Date getDate(){ return birthDate; }
+    Date getDate(){ return birthDate; }
 
     public void setBirthDate(String birthDate) {
         try {
@@ -47,9 +47,10 @@ public class Pupil {
         }
     }
 
-    public int getRead() { return read; }
+    int getRead() { return read; }
 
     public void setRead(String read) { this.read = Integer.parseInt(read); }
+    void setRead(int previous) { this.read = previous + 1; }
 
     public static class PupilComparator1 implements Comparator<Pupil> {
         @Override

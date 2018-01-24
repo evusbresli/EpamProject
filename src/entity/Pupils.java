@@ -22,6 +22,33 @@ public class Pupils {
         this.pupils = pupils;
     }
 
+    public boolean acceptID(String ID){
+        for (Pupil pupil : pupils){
+            if (pupil.getID().equals(ID)){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public String greeting(String ID){
+        for (Pupil pupil : pupils){
+            if (pupil.getID().equals(ID)){
+                return "\nWelcome, " + pupil.getName() + ". Enter the number of the publication you want to read." +
+                        "\nEnter \"back\" if you want to return to main menu.";
+            }
+        }
+        return "";
+    }
+
+    public void increaseRead(String ID){
+        for (Pupil pupil : pupils){
+            if (pupil.getID().equals(ID)){
+                pupil.setRead(pupil.getRead());
+            }
+        }
+    }
+
     public void getReadingPupils(){
         sort(1);
         boolean status = false;
@@ -57,7 +84,7 @@ public class Pupils {
         System.out.println("---------------------------------");
     }
 
-    public void sort(int mode){
+    private void sort(int mode){
         switch (mode){
             case 1:
                 pupils.sort(new PupilComparator1());

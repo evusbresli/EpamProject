@@ -3,10 +3,10 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
 
-interface Menu {
-    String root = System.getProperty("user.dir") + "/src/";
+abstract class Menu {
+    private static String root = System.getProperty("user.dir") + "/src/";
 
-    static void showMenuOne() throws IOException, ParserConfigurationException {
+    static void showMainMenu() throws IOException, ParserConfigurationException {
         String choice;
         Scanner read = new Scanner(System.in);
 
@@ -33,15 +33,39 @@ interface Menu {
         }
     }
 
-    static void showMenuPupil(Scanner read){
-
+    private static void showMenuPupil(Scanner read) throws ParserConfigurationException, IOException {
+        Library instance = new Library(root);
+        instance.buildPupils(root);
+        System.out.print("\nEnter your pupil id (back - return to main menu): ");
+        while (true){
+            String ID = read.next();
+            if (instance.acceptID(ID)){
+                showPupilWork(read, instance, ID);
+                return;
+            } else if (ID.equals("back")) {
+                return;
+            } else System.out.print("Pupil with such ID is not registrated. Try again: ");
+        }
     }
 
-    static void showPupilWork(Scanner read){
-
+    private static void showPupilWork(Scanner read, Library instance, String ID) throws IOException {
+        String choice;
+        System.out.println(instance.greeting(ID));
+        instance.showAvailable();
+        while (true) {
+            System.out.print("\tYour choice: ");
+            choice = read.next();
+            switch (choice){
+                case "back":
+                    return;
+                default:
+                    System.out.println("OK");
+                    break;
+            }
+        }
     }
 
-    static void showMenuLibrarian(Scanner read) throws IOException, ParserConfigurationException {
+    private static void showMenuLibrarian(Scanner read) throws IOException, ParserConfigurationException {
         Scanner fileReader = new Scanner(new File(root + "sources/superpass.txt"));
         String superPassword = fileReader.next();
 
@@ -58,7 +82,7 @@ interface Menu {
         }
     }
 
-    static void showLibrarianWork(Scanner read, String root) throws IOException, ParserConfigurationException {
+    private static void showLibrarianWork(Scanner read, String root) throws IOException, ParserConfigurationException {
         String choice;
         Library instance = new Library(root);
         instance.buildPupils(root);

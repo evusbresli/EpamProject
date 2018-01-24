@@ -34,4 +34,21 @@ class ParseFile {
 
         return node.getNodeValue();
     }
+
+    static void increaseRead(Element root, String ID){
+        ID = "id" + ID;
+        System.out.println(ID);
+        NodeList pupilNodes = root.getElementsByTagName("pupil");
+
+        for (int i = 0; i < pupilNodes.getLength(); i++){
+            Element pupilElement = (Element) pupilNodes.item(i);
+            if (pupilElement.getAttribute("ID").equals(ID)){
+//                int read = Integer.parseInt(getBabyValue(pupilElement, "read"))
+            }
+        }
+    }
+
+    private static void setBabyValue(Element parent, String childName, String newChildName){
+
+    }
 }

@@ -9,9 +9,7 @@ public class Book extends Item {
         this.author = author;
     }
 
-    public static String getType() {
-        return type;
-    }
+    public String getType() { return super.getType() + type; }
 
     public static void setType(String type) {
         Book.type = type;

@@ -1,3 +1,4 @@
+import entity.Pupil;
 import entity.Pupils;
 import entity.publications.Item;
 import org.w3c.dom.Document;
@@ -23,9 +24,19 @@ class Library {
         System.out.println("\n\tList of available literature:");
         for (Item item : items) {
             System.out.println(item);
+            System.out.println(item.getType());
         }
         System.out.println();
     }
+
+//    void readSmth(String ID){
+//        for (Item item : items){
+//            if (item.getID() == Integer.parseInt(ID) && item.getClass() == ){
+//                pupils.increaseRead(ID);
+//
+//            }
+//        }
+//    }
 
     void buildPupils(String rootSystem) throws ParserConfigurationException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
@@ -39,6 +50,10 @@ class Library {
             e.printStackTrace();
         }
     }
+
+    boolean acceptID(String ID){ return pupils.acceptID(ID); }
+
+    String greeting(String ID) { return pupils.greeting(ID); }
 
     void showMoreThan1Book() { pupils.getReadingPupils(); }
 

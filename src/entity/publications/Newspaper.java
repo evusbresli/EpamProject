@@ -9,9 +9,7 @@ public class Newspaper extends Item {
         this.publishingHouse = publishingHouse;
     }
 
-    public static String getType() {
-        return type;
-    }
+    public String getType() { return super.getType() + type; }
 
     public static void setType(String type) {
         Newspaper.type = type;

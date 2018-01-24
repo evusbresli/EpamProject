@@ -11,7 +11,7 @@ public class Item {
         this.name = name;
     }
 
-    int getID() {
+    public int getID() {
         return ID;
     }
 
@@ -26,6 +26,8 @@ public class Item {
     public void setName(String name) {
         this.name = name;
     }
+
+    public String getType() { return "";}
 
     @Override
     public String toString() {
